@@ -1,0 +1,299 @@
+body{
+    margin-top: 20px;
+    background-color: rgb(0, 51, 102);
+    font-family:sans-serif;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.page{
+    margin: auto;
+    padding: 20px;
+    width: 1200px;
+    border-radius: 15px;
+    background-color: rgb(166, 166, 166);
+}
+
+.page header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 25pt;
+}
+
+.page header a img{
+    position: sticky;
+}
+
+.menu-navigation{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    margin-top: 50px;
+    border: solid;
+    border-radius: 15px;
+    border-color: rgb(0, 51, 102);
+}
+
+.menu-navigation ul{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    list-style: none;
+}
+
+.menu-navigation ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+}
+
+.menu-navigation ul li a:hover{
+    color: rgb(128, 128, 128);
+}    
+
+.menu-navigation ul li a:active{
+    color: rgb(0, 0, 0);
+}    
+
+.menu-navigation a{
+    align-self: center;
+    font-size: 15pt;
+}
+
+.contenue{
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 3fr 1fr;
+}
+
+.creation header,
+.temps-moderne header{
+    display: block; 
+    text-align: left; 
+    margin-bottom: -40px;
+}
+
+.creation a img{
+    float: left;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.creation p{
+    text-align: justify;
+    margin-left: 15px;
+    margin-top: -10px;
+}
+
+.temps-moderne{
+    grid-column-start: 1;
+    margin-top: -300px;
+}
+
+.temps-moderne p,
+.temps-moderne h3,
+.temps-moderne ul{
+    text-align: justify;
+    margin-left: 15px;
+}
+
+.temps-moderne ul{
+    list-style-type: square;
+}
+
+.nouvelles{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-top: 50px;
+    margin-left: 80px;
+    padding: 50px;
+    border: solid;
+    border-radius: 15px;
+    border-color: rgb(0, 51, 102);
+}
+
+.nouvelles header a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nouvelles header h2{
+    text-align: center;
+    color: rgb(0, 51, 102);
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+.nouvelles article header{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: -30px;
+}
+
+.nouvelles ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nouvelles h3{
+    display: inline;
+    margin-bottom: 10px;
+    font-size: 15pt;
+}
+
+.nouvelles header time{
+    font-size: 10pt;
+}
+
+.nouvelle1,
+.nouvelle2,
+.nouvelle3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    font-size: 9pt;
+}
+
+.nouvelle1 p,
+.nouvelle2 p,
+.nouvelle3 p{
+    display: flex;
+}
+
+.footer-lien{  
+    margin: auto;
+}
+
+.footer-copyright{
+    margin-left: -40px;
+}
+
+.footer-infos {
+    grid-column: 1 / span 3; 
+    grid-row: 2; 
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.groupe1,
+.groupe2,
+.groupe3,
+.vue-stade{
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 20px;
+}
+
+.groupe1 img,
+.groupe2 img,
+.groupe3 img,
+.vue-stade img{
+    display: block;
+    margin: auto; 
+}
+
+.groupe1 p,
+.groupe2 p,
+.groupe3 p,
+.vue-stade p{
+    text-align: center; 
+    margin-top: 5px; 
+}
+
+.karim,
+.cristiano,
+.luka,
+.raul,
+.exterieur,
+.interieur{
+    font-size: 10pt;
+}
+
+.iker,
+.sergio{
+    font-size: 9pt;
+}
+
+.groupe1 > div,
+.groupe2 > div,
+.groupe3 > div,
+.vue-stade > div{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.commentaire{
+    margin-top: 30px;
+}
+
+.commentaire form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+
+.infos-personnel div,
+.observation div {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 15px; 
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold; 
+    color: rgb(0, 51, 102);
+    width: 150px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid rgb(0, 51, 102);
+    border-radius: 5px; 
+    min-width: 250px;
+}
+
+textarea {
+    resize: vertical; 
+}
+
+button[type="submit"] {
+    font-size: 15pt;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 51, 102);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(128, 128, 128);
+}
+
+.connexion{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}

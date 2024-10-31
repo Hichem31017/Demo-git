@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--Auteur : Hichem Bouhani, date : 20/09/2024-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire du Real Madrid CF - Commentaires</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <a href="index.html"><img id="accueil" src="img/logo.png" alt="Logo du Real Madrid CF"></a> <!--source photo:https://www.freeiconspng.com/-->
+            <h1>Histoire du Real Madrid CF</h1>
+        </header>
+
+        <nav>
+            <div class="menu-navigation">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="galerie-images.html">Galerie photo</a></li>
+                    <li><a href="commentaires.html">Commentaires</a></li>
+                </ul>
+                <a href="connexion.html">Se connecter</a>
+            </div>
+        </nav>
+
+        <main class="commentaire">
+            <form action="mailto:2461959@csfoy.ca" method="post">
+                <fieldset class="infos-personnel">
+                    <div>
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div>
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div>
+                        <label for="date_naissance">Date de naissance :</label>
+                        <input type="date" id="date_naissance" name="date_naissance" required>
+                    </div>
+                    <div>
+                        <label for="courriel">Courriel :</label>
+                        <input type="email" id="courriel" name="courriel" required>
+                    </div>
+                    <div>
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="###-###-####" pattern="\d{3}-\d{3}-\d{4}" required>
+                    </div>
+                    <div>
+                        <label for="province">Province :</label>
+                        <select id="province" name="province">
+                            <option value="alberta">Alberta</option>
+                            <option value="colombie-britannique">Colombie-Britannique</option>
+                            <option value="ile-du-prince-edouard">Île-du-Prince-Édouard</option>
+                            <option value="manitoba">Manitoba</option>
+                            <option value="nouveau-brunswick">Nouveau-Brunswick</option>
+                            <option value="novelle-ecosse">Nouvelle-Écosse</option>
+                            <option value="ontario">Ontario</option>
+                            <option value="quebec" selected>Québec</option>
+                            <option value="saskatchewan">Saskatchewan</option>
+                            <option value="terre-neuve-et-labrador">Terre-Neuve-et-Labrador</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Joueurs préférés :</label>
+                        <div>
+                            <input type="checkbox" id="kylian" name="choix" value="Mbappé">
+                            <label for="kylian">Mbappé</label>
+                            <input type="checkbox" id="junior" name="choix" value="Vinicius">
+                            <label for="junior">Vinicius</label>
+                            <input type="checkbox" id="thibaut" name="choix" value="Courtois">
+                            <label for="thibaut">Courtois</label>
+                            <input type="checkbox" id="antonio" name="choix" value="Rudiger">
+                            <label for="antonio">Rudiger</label>
+                            <input type="checkbox" id="jude" name="choix" value="Bellingham">
+                            <label for="jude">Bellingham</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="observation">
+                    <div>
+                        <label for="commentaires">Commentaires :</label>
+                        <textarea id="commentaires" name="commentaires" rows="7"></textarea>
+                    </div>
+                    <div>
+                        <label>Note du site Web :</label>
+                        <input type="radio" id="excellent" name="note" value="Excellent" checked>
+                        <label for="excellent">Excellent</label>
+                        <input type="radio" id="tres_bien" name="note" value="Très bien">
+                        <label for="tres_bien">Très bien</label>
+                        <input type="radio" id="moyen" name="note" value="Moyen">
+                        <label for="moyen">Moyen</label>
+                        <input type="radio" id="bof" name="note" value="Bof">
+                        <label for="bof">Bof</label>
+                    </div>
+                </fieldset>
+                <button type="submit">Envoyer les commentaires</button>
+            </form>
+        </main>
+
+        <footer>
+            <div class="footer-lien">
+                <a href="#accueil">Haut de la page</a>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright 2024</p>
+            </div>
+            <div class="footer-infos">
+                <p>420-W11-SF</p>
+                <p>Travail pratique 1</p>
+                <p>Hichem Bouhani</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
